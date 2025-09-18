@@ -1,0 +1,18 @@
+{
+  "name": "json2csv",
+  "version": "1.0.0",
+  "main": "convert.js",
+  "bin": {
+    "json2csv": "./convert.js"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Converter between JSON and CSV",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
