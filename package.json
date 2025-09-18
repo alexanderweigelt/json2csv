@@ -8,8 +8,8 @@
   "scripts": {
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["json2csv", "csv2json", "json", "csv", "converter"],
+  "author": "<Alexandar Weigelt>",
   "license": "ISC",
   "description": "Converter between JSON and CSV",
   "devDependencies": {
