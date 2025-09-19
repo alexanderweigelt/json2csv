@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /**
  * Usage
  * =========================================
@@ -13,7 +15,6 @@
  * CSV values are quoted and escaped properly (`"` becomes `""`).
  * Minimal dependency – no external packages like `csv-parser`.
  */
-
 
 const fs = require('fs');
 const path = require('path');
@@ -75,8 +76,8 @@ function csvToJson(csvString) {
   });
 }
 
-function main() {
-  const [sourceFile, targetFile] = process.argv.slice(2);
+function main(args = process.argv.slice(2)) {
+  const [sourceFile, targetFile] = args;
   if (!sourceFile || !targetFile) {
     console.error('Usage: node convert.js <sourceFile> <targetFile>');
     process.exit(1);

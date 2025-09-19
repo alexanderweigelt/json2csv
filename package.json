@@ -1,11 +1,12 @@
 {
   "name": "@alexanderweigelt/json2csv",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "convert.js",
   "bin": {
-    "json2csv": "bin/json2csv.js"
+    "json2csv": "bin/json2csv"
   },
   "files": [
+    "bin/json2csv",
     "convert.js",
     "README.md",
     "package.json"
@@ -13,7 +14,13 @@
   "scripts": {
     "test": "jest"
   },
-  "keywords": ["json2csv", "csv2json", "json", "csv", "converter"],
+  "keywords": [
+    "json2csv",
+    "csv2json",
+    "json",
+    "csv",
+    "converter"
+  ],
   "author": "<Alexandar Weigelt>",
   "license": "ISC",
   "description": "Converter between JSON and CSV",

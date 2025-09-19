@@ -11,24 +11,37 @@ A small tool to convert JSON and CSV.
 - Clone or copy the project.
 - Install dev dependencies (for tests only):
 ```shell script
-npm install
+npm install @alexanderweigelt/json2csv
 ```
-
-
 ## Run
 
 - Convert JSON to CSV:
 ```shell script
 node convert.js input.json output.csv
 ```
-
-
 - Convert CSV to JSON:
 ```shell script
 node convert.js input.csv output.json
 ```
+### Usage as Binary (CLI)
 
-
+- Without prior installation (if the package is available in the standard registry):
+```shell
+npx json2csv input.json output.csv
+```
+- Obtain explicitly via the package and execute the binary:
+```shell
+npx -p @alexanderweigelt/json2csv json2csv input.json output.csv
+```
+- Locale installed (as dependency to the project):
+```shell
+npx json2csv input.csv output.json
+```
+- Global installed:
+```shell
+npm i -g @alexanderweigelt/json2csv
+json2csv input.json output.csv
+```
 ## What it can do
 
 1) JSON object -> CSV (key;value lines)
@@ -41,16 +54,15 @@ node convert.js input.csv output.json
 Example:
 ```json
 {
-  "a": "1",
-  "b": "2"
+"a": "1",
+"b": "2"
 }
 ```
+
 ```
 "a";"1"
 "b";"2"
 ```
-
-
 2) CSV key;value lines -> JSON object
 - Input: CSV with exactly two columns in every row
 - No header row
@@ -62,11 +74,10 @@ Example:
 "a";"1"
 "b";"2"
 ```
+
 ```json
 { "a": "1", "b": "2" }
 ```
-
-
 ## Rules and limits
 
 - Delimiter is always semicolon (;)
@@ -82,8 +93,6 @@ Example:
 ```shell script
 npm test
 ```
-
-
 ## License
 
 ISC
