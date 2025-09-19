@@ -1,6 +1,6 @@
 {
-  "name": "json2csv",
-  "version": "1.0.0",
+  "name": "@alexanderweigelt/json2csv",
+  "version": "1.0.1",
   "main": "convert.js",
   "bin": {
     "json2csv": "convert.js"
@@ -19,6 +19,7 @@
     "url": "git+https://github.com/alexanderweigelt/json2csv.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com",
+    "scope": "@alexanderweigelt"
   }
 }
